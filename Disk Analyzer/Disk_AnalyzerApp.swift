@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct Disk_AnalyzerApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra {
             ContentView()
+        } label: {
+            Label("Disk Analyzer", systemImage: "externaldrive.connected.to.line.below.fill")
         }
+        .menuBarExtraStyle(.window)
     }
 }
